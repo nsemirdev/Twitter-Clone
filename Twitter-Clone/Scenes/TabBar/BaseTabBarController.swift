@@ -17,7 +17,7 @@ final class BaseTabBarController: UITabBarController {
     
     private func setupViewControllers() {
         viewControllers = [
-            createNavController(viewController: HomeTableController(), imageName: "home"),
+            HomeNavigationController(),
             createNavController(viewController: SearchController(), imageName: "search"),
             createNavController(viewController: NotificationTableController(), imageName: "notification"),
             createNavController(viewController: MessageTableController(), imageName: "message")
