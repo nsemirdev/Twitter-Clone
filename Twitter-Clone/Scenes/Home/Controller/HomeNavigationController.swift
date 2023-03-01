@@ -10,6 +10,7 @@ import SnapKit
 
 final class HomeNavigationController: UINavigationController {
     
+    private let addTextButton = UIButton(imageName: "add-text")
     private let profileButton = UIButton(imageName: "mock-profile")
     private let exploreButton = UIButton(imageName: "nav-right")
     private let twLogo = UIImageView(image: UIImage(named: "tw-logo"))
@@ -52,6 +53,13 @@ final class HomeNavigationController: UINavigationController {
             make.bottom.equalToSuperview()
             make.leading.trailing.equalToSuperview()
             make.height.equalTo(0.5)
+        }
+        
+        view.addSubview(addTextButton)
+        
+        addTextButton.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-12)
+            make.trailing.equalToSuperview().offset(-12)
         }
     }
 }
