@@ -13,7 +13,7 @@ final class HomeNavigationController: UINavigationController {
     private let profileButton = UIButton(imageName: "mock-profile")
     private let exploreButton = UIButton(imageName: "nav-right")
     private let twLogo = UIImageView(image: UIImage(named: "tw-logo"))
-    private let divider = Divider(.gray)
+    private let divider = Divider(#colorLiteral(red: 0.7870897651, green: 0.8147261739, blue: 0.8408268094, alpha: 1))
     
     convenience init() {
         self.init(rootViewController: HomeTableController())
