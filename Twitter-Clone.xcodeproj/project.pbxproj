@@ -47,6 +47,7 @@
 		2DCD7F9D29B00914005536FA /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD7F8A29B00914005536FA /* Poppins-Italic.ttf */; };
 		2DCD7F9E29B00914005536FA /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD7F8B29B00914005536FA /* Poppins-MediumItalic.ttf */; };
 		2DCD7FA029B00BB0005536FA /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F9F29B00BB0005536FA /* UIFont+.swift */; };
+		2DCD7FA229B0133F005536FA /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7FA129B0133F005536FA /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		2DCD7F8A29B00914005536FA /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		2DCD7F8B29B00914005536FA /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		2DCD7F9F29B00BB0005536FA /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		2DCD7FA129B0133F005536FA /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				2DCD7F7429AFFE23005536FA /* VerticalStack.swift */,
 				2DCD7F7629AFFE94005536FA /* HorizontalStack.swift */,
 				2DCD7F9F29B00BB0005536FA /* UIFont+.swift */,
+				2DCD7FA129B0133F005536FA /* String+.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				2DCD7F5129AFDA75005536FA /* SearchController.swift in Sources */,
 				2DCD7F6F29AFF19E005536FA /* MockPosts.swift in Sources */,
 				2DCD7F7729AFFE94005536FA /* HorizontalStack.swift in Sources */,
+				2DCD7FA229B0133F005536FA /* String+.swift in Sources */,
 				2DCD7F6C29AFF148005536FA /* Post.swift in Sources */,
 				2DCD7F4F29AFDA65005536FA /* HomeTableController.swift in Sources */,
 				2DCD7F6329AFECDF005536FA /* UIButton+.swift in Sources */,

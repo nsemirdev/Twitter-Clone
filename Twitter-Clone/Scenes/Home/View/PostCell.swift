@@ -22,8 +22,8 @@ final class PostCell: UITableViewCell {
     private let shareButton = UIButton(imageName: "share")
     
     private lazy var labelsStack = HorizontalStack([nameLabel, usernameLabel, timePassedLabel])
-    private lazy var buttonsStack = HorizontalStack([commentButton, rtButton, likeButton, shareButton], spacing: 40)
-    private lazy var overallStackview = VerticalStack([labelsStack, bodyLabel, buttonsStack], spacing: 10)
+    private lazy var buttonsStack = HorizontalStack([commentButton, rtButton, likeButton, shareButton])
+    private lazy var overallStackview = VerticalStack([labelsStack, bodyLabel, buttonsStack], spacing: 6)
     
     func configure(with post: Post) {
         profileImage.image = UIImage(named: post.profileImage)
@@ -37,16 +37,19 @@ final class PostCell: UITableViewCell {
         bodyLabel.textColor = #colorLiteral(red: 0.1010758653, green: 0.1133193746, blue: 0.1299102902, alpha: 1)
         
         let colorLiteral = UIColor(red: 0.4820557833, green: 0.5377379656, blue: 0.5890749693, alpha: 1)
+        var conf = UIButton.Configuration.plain()
+        conf.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 0)
+        conf.imagePadding = 2
         
         commentButton.setTitle("\(post.commentCount)", for: .normal)
         commentButton.setTitleColor(colorLiteral, for: .normal)
-        commentButton.imageEdgeInsets = .init(top: 0, left: -5, bottom: 0, right: 0)
+        commentButton.configuration = conf
         rtButton.setTitle("\(post.rtCount)", for: .normal)
         rtButton.setTitleColor(colorLiteral, for: .normal)
-        rtButton.imageEdgeInsets = .init(top: 0, left: -5, bottom: 0, right: 0)
+        rtButton.configuration = conf
         likeButton.setTitle("\(post.likeCount)", for: .normal)
         likeButton.setTitleColor(colorLiteral, for: .normal)
-        likeButton.imageEdgeInsets = .init(top: 0, left: -5, bottom: 0, right: 0)
+        likeButton.configuration = conf
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -60,17 +63,19 @@ final class PostCell: UITableViewCell {
     
     private func setupViews() {
         contentView.addSubviews(profileImage, overallStackview, divider)
-        labelsStack.alignment = .center
-        overallStackview.alignment = .leading
+        labelsStack.alignment = .bottom
+        overallStackview.alignment = .fill
+        buttonsStack.distribution = .equalSpacing
         
         profileImage.snp.makeConstraints { make in
-            make.leading.top.equalToSuperview().offset(20)
+            make.leading.equalToSuperview().offset(20)
+            make.top.equalTo(overallStackview.snp.top)
             make.width.height.equalTo(55)
         }
         
         overallStackview.snp.makeConstraints { make in
             make.leading.equalTo(profileImage.snp.trailing).offset(12)
-            make.trailing.equalToSuperview().offset(-12)
+            make.trailing.equalToSuperview().offset(-20)
             make.top.equalToSuperview().offset(13)
             make.bottom.equalToSuperview().offset(-13)
         }
