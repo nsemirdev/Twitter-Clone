@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		2DCD7F3129AFD8D2005536FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F3029AFD8D2005536FA /* AppDelegate.swift */; };
 		2DCD7F3329AFD8D2005536FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F3229AFD8D2005536FA /* SceneDelegate.swift */; };
-		2DCD7F3529AFD8D2005536FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F3429AFD8D2005536FA /* ViewController.swift */; };
 		2DCD7F3A29AFD8D3005536FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD7F3929AFD8D3005536FA /* Assets.xcassets */; };
 		2DCD7F3D29AFD8D3005536FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD7F3B29AFD8D3005536FA /* LaunchScreen.storyboard */; };
+		2DCD7F4929AFDA00005536FA /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F4829AFDA00005536FA /* BaseTabBarController.swift */; };
+		2DCD7F4F29AFDA65005536FA /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F4E29AFDA65005536FA /* HomeTableController.swift */; };
+		2DCD7F5129AFDA75005536FA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F5029AFDA75005536FA /* SearchController.swift */; };
+		2DCD7F5329AFDA8B005536FA /* NotificationTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F5229AFDA8B005536FA /* NotificationTableController.swift */; };
+		2DCD7F5529AFDA96005536FA /* MessageTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F5429AFDA96005536FA /* MessageTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DCD7F2D29AFD8D2005536FA /* Twitter-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DCD7F3029AFD8D2005536FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DCD7F3229AFD8D2005536FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2DCD7F3429AFD8D2005536FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DCD7F3929AFD8D3005536FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DCD7F3C29AFD8D3005536FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DCD7F3E29AFD8D3005536FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DCD7F4829AFDA00005536FA /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		2DCD7F4E29AFDA65005536FA /* HomeTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
+		2DCD7F5029AFDA75005536FA /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		2DCD7F5229AFDA8B005536FA /* NotificationTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableController.swift; sourceTree = "<group>"; };
+		2DCD7F5429AFDA96005536FA /* MessageTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +91,53 @@
 		2DCD7F4629AFD974005536FA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				2DCD7F3429AFD8D2005536FA /* ViewController.swift */,
+				2DCD7F4D29AFDA41005536FA /* Message */,
+				2DCD7F4C29AFDA39005536FA /* Notification */,
+				2DCD7F4B29AFDA34005536FA /* Search */,
+				2DCD7F4A29AFDA2F005536FA /* Home */,
+				2DCD7F4729AFD9EA005536FA /* TabBar */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2DCD7F4729AFD9EA005536FA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD7F4829AFDA00005536FA /* BaseTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2DCD7F4A29AFDA2F005536FA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD7F4E29AFDA65005536FA /* HomeTableController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2DCD7F4B29AFDA34005536FA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD7F5029AFDA75005536FA /* SearchController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2DCD7F4C29AFDA39005536FA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD7F5229AFDA8B005536FA /* NotificationTableController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		2DCD7F4D29AFDA41005536FA /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD7F5429AFDA96005536FA /* MessageTableController.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD7F3529AFD8D2005536FA /* ViewController.swift in Sources */,
+				2DCD7F4929AFDA00005536FA /* BaseTabBarController.swift in Sources */,
+				2DCD7F5329AFDA8B005536FA /* NotificationTableController.swift in Sources */,
+				2DCD7F5129AFDA75005536FA /* SearchController.swift in Sources */,
+				2DCD7F4F29AFDA65005536FA /* HomeTableController.swift in Sources */,
+				2DCD7F5529AFDA96005536FA /* MessageTableController.swift in Sources */,
 				2DCD7F3129AFD8D2005536FA /* AppDelegate.swift in Sources */,
 				2DCD7F3329AFD8D2005536FA /* SceneDelegate.swift in Sources */,
 			);
