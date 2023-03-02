@@ -50,6 +50,8 @@
 		2DCD7FA229B0133F005536FA /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7FA129B0133F005536FA /* String+.swift */; };
 		2DD2B72329B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72229B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift */; };
 		2DD2B72929B09172008BB5EF /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72829B09172008BB5EF /* SearchTextField.swift */; };
+		2DD2B72B29B097C6008BB5EF /* NotificationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72A29B097C6008BB5EF /* NotificationNavigationController.swift */; };
+		2DD2B72F29B09A18008BB5EF /* CustomSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72E29B09A18008BB5EF /* CustomSplitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +99,8 @@
 		2DCD7FA129B0133F005536FA /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		2DD2B72229B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationControllerSearchNavController.swift; sourceTree = "<group>"; };
 		2DD2B72829B09172008BB5EF /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		2DD2B72A29B097C6008BB5EF /* NotificationNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNavigationController.swift; sourceTree = "<group>"; };
+		2DD2B72E29B09A18008BB5EF /* CustomSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +205,8 @@
 		2DCD7F4C29AFDA39005536FA /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				2DCD7F5229AFDA8B005536FA /* NotificationTableController.swift */,
+				2DD2B72D29B09A0D008BB5EF /* View */,
+				2DD2B72C29B09A05008BB5EF /* Controller */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -301,6 +306,23 @@
 			isa = PBXGroup;
 			children = (
 				2DD2B72829B09172008BB5EF /* SearchTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DD2B72C29B09A05008BB5EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2B72A29B097C6008BB5EF /* NotificationNavigationController.swift */,
+				2DCD7F5229AFDA8B005536FA /* NotificationTableController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DD2B72D29B09A0D008BB5EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2B72E29B09A18008BB5EF /* CustomSplitView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +427,7 @@
 				2DCD7F5129AFDA75005536FA /* SearchController.swift in Sources */,
 				2DCD7F6F29AFF19E005536FA /* MockPosts.swift in Sources */,
 				2DCD7F7729AFFE94005536FA /* HorizontalStack.swift in Sources */,
+				2DD2B72F29B09A18008BB5EF /* CustomSplitView.swift in Sources */,
 				2DCD7FA229B0133F005536FA /* String+.swift in Sources */,
 				2DCD7F6C29AFF148005536FA /* Post.swift in Sources */,
 				2DCD7F4F29AFDA65005536FA /* HomeTableController.swift in Sources */,
@@ -412,6 +435,7 @@
 				2DCD7F7129AFF394005536FA /* PostCell.swift in Sources */,
 				2DCD7F5529AFDA96005536FA /* MessageTableController.swift in Sources */,
 				2DD2B72929B09172008BB5EF /* SearchTextField.swift in Sources */,
+				2DD2B72B29B097C6008BB5EF /* NotificationNavigationController.swift in Sources */,
 				2DD2B72329B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift in Sources */,
 				2DCD7FA029B00BB0005536FA /* UIFont+.swift in Sources */,
 				2DCD7F3129AFD8D2005536FA /* AppDelegate.swift in Sources */,
