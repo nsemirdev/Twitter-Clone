@@ -32,7 +32,7 @@ final class BaseTabBarController: UITabBarController {
     private func setupViewControllers() {
         viewControllers = [
             HomeNavigationController(),
-            createNavController(viewController: SearchController(), imageName: "search"),
+            SearchNavigationController(),
             createNavController(viewController: NotificationTableController(), imageName: "notification"),
             createNavController(viewController: MessageTableController(), imageName: "message")
         ]

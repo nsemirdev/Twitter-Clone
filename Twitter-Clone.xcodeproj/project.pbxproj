@@ -48,6 +48,8 @@
 		2DCD7F9E29B00914005536FA /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD7F8B29B00914005536FA /* Poppins-MediumItalic.ttf */; };
 		2DCD7FA029B00BB0005536FA /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F9F29B00BB0005536FA /* UIFont+.swift */; };
 		2DCD7FA229B0133F005536FA /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7FA129B0133F005536FA /* String+.swift */; };
+		2DD2B72329B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72229B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift */; };
+		2DD2B72929B09172008BB5EF /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72829B09172008BB5EF /* SearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +95,8 @@
 		2DCD7F8B29B00914005536FA /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		2DCD7F9F29B00BB0005536FA /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		2DCD7FA129B0133F005536FA /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		2DD2B72229B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationControllerSearchNavController.swift; sourceTree = "<group>"; };
+		2DD2B72829B09172008BB5EF /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +192,8 @@
 		2DCD7F4B29AFDA34005536FA /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				2DCD7F5029AFDA75005536FA /* SearchController.swift */,
+				2DD2B72729B09165008BB5EF /* View */,
+				2DD2B72629B0915C008BB5EF /* Controller */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -281,6 +286,23 @@
 				2DCD7F8B29B00914005536FA /* Poppins-MediumItalic.ttf */,
 			);
 			path = Poppins;
+			sourceTree = "<group>";
+		};
+		2DD2B72629B0915C008BB5EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2B72229B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift */,
+				2DCD7F5029AFDA75005536FA /* SearchController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DD2B72729B09165008BB5EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2B72829B09172008BB5EF /* SearchTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +411,8 @@
 				2DCD7F6329AFECDF005536FA /* UIButton+.swift in Sources */,
 				2DCD7F7129AFF394005536FA /* PostCell.swift in Sources */,
 				2DCD7F5529AFDA96005536FA /* MessageTableController.swift in Sources */,
+				2DD2B72929B09172008BB5EF /* SearchTextField.swift in Sources */,
+				2DD2B72329B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift in Sources */,
 				2DCD7FA029B00BB0005536FA /* UIFont+.swift in Sources */,
 				2DCD7F3129AFD8D2005536FA /* AppDelegate.swift in Sources */,
 				2DCD7F6529AFED6A005536FA /* Divider.swift in Sources */,
