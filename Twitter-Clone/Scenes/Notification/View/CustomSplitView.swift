@@ -14,6 +14,7 @@ final class CustomSplitView: UIView {
     let activeColor = #colorLiteral(red: 0.3590039611, green: 0.6878271699, blue: 0.9382472634, alpha: 1)
     let passiveColor = #colorLiteral(red: 0.4820557833, green: 0.5377379656, blue: 0.5890749693, alpha: 1)
     let bottomView = Divider(#colorLiteral(red: 0.3590039611, green: 0.6878271699, blue: 0.9382472634, alpha: 1))
+    var delegate: CustomSplitViewDelegate?
     
     private lazy var allButton: UIButton = {
         let button = UIButton(type: .system)
@@ -44,6 +45,7 @@ final class CustomSplitView: UIView {
         UIView.animate(withDuration: 0.2) {
             self.bottomView.transform = .identity
         }
+        delegate?.didSelectAll()
     }
     
     @objc func handleRight() {
@@ -57,6 +59,7 @@ final class CustomSplitView: UIView {
         UIView.animate(withDuration: 0.2) {
             self.bottomView.transform = .init(translationX: self.bottomView.frame.size.width, y: 0)
         }
+        delegate?.didSelectMentions()
     }
     
     private lazy var buttonStack = HorizontalStack([allButton, mentionsButton])
@@ -81,4 +84,9 @@ final class CustomSplitView: UIView {
             make.height.equalTo(2)
         }
     }
+}
+
+protocol CustomSplitViewDelegate {
+    func didSelectMentions()
+    func didSelectAll()
 }

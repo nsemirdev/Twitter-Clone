@@ -9,22 +9,23 @@ import UIKit
 import SnapKit
 
 final class NotificationNavigationController: UINavigationController {
-    
     private let addTextButton = UIButton(imageName: "add-text")
     private let profileButton = UIButton(imageName: "mock-profile")
     private let settingsButton = UIButton(imageName: "settings")
     private let divider = Divider(#colorLiteral(red: 0.7870897651, green: 0.8147261739, blue: 0.8408268094, alpha: 1))
     private let titleLabel = UILabel(text: "Notifications", font: .poppin900(size: 17))
     private let splitView = CustomSplitView()
+    var customDelegate: CustomSplitViewDelegate?
     
     convenience init() {
-        self.init(rootViewController: NotificationTableController())
+        self.init(rootViewController: NotificationController())
         tabBarItem.image = UIImage(named: "notification")
         tabBarItem.selectedImage = UIImage(named: "notification-selected")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        splitView.delegate = self
         setupViews()
     }
     
@@ -71,6 +72,16 @@ final class NotificationNavigationController: UINavigationController {
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-12)
             make.trailing.equalToSuperview().offset(-12)
         }
+    }
+}
+
+extension NotificationNavigationController: CustomSplitViewDelegate {
+    func didSelectMentions() {
+        customDelegate?.didSelectMentions()
+    }
+    
+    func didSelectAll() {
+        customDelegate?.didSelectAll()
     }
 }
 
