@@ -9,7 +9,7 @@ import UIKit
 
 final class SearchTextField: UITextField {
 
-    convenience init() {
+    convenience init(text: String) {
         self.init(frame: .zero)
         backgroundColor = #colorLiteral(red: 0.9242289662, green: 0.9405881763, blue: 0.9531721473, alpha: 1)
         clipsToBounds = true
@@ -26,10 +26,8 @@ final class SearchTextField: UITextField {
         
         let colorLiteral = #colorLiteral(red: 0.4820557833, green: 0.5377379656, blue: 0.5890749693, alpha: 1)
         attributedPlaceholder = NSAttributedString(
-            string: "Search Twitter",
+            string: text,
             attributes: [NSAttributedString.Key.foregroundColor: colorLiteral]
         )
-        
-
     }
 }

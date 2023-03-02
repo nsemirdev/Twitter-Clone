@@ -15,7 +15,7 @@
 		2DCD7F4F29AFDA65005536FA /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F4E29AFDA65005536FA /* HomeTableController.swift */; };
 		2DCD7F5129AFDA75005536FA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F5029AFDA75005536FA /* SearchController.swift */; };
 		2DCD7F5329AFDA8B005536FA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F5229AFDA8B005536FA /* NotificationController.swift */; };
-		2DCD7F5529AFDA96005536FA /* MessageTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F5429AFDA96005536FA /* MessageTableController.swift */; };
+		2DCD7F5529AFDA96005536FA /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F5429AFDA96005536FA /* MessageController.swift */; };
 		2DCD7F5929AFE3CF005536FA /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F5829AFE3CF005536FA /* HomeNavigationController.swift */; };
 		2DCD7F6029AFE907005536FA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2DCD7F5F29AFE907005536FA /* SnapKit */; };
 		2DCD7F6329AFECDF005536FA /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7F6229AFECDF005536FA /* UIButton+.swift */; };
@@ -55,6 +55,10 @@
 		2DD2B73329B123C4008BB5EF /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73229B123C4008BB5EF /* Notification.swift */; };
 		2DD2B73729B12451008BB5EF /* MockNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73629B12451008BB5EF /* MockNotifications.swift */; };
 		2DD2B73929B12560008BB5EF /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73829B12560008BB5EF /* NotificationCell.swift */; };
+		2DD2B73B29B12AA5008BB5EF /* MessageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73A29B12AA5008BB5EF /* MessageNavigationController.swift */; };
+		2DD2B74129B12D0B008BB5EF /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B74029B12D0B008BB5EF /* MessagePreview.swift */; };
+		2DD2B74329B12D32008BB5EF /* MessagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B74229B12D32008BB5EF /* MessagePreviewCell.swift */; };
+		2DD2B74529B12DB0008BB5EF /* MockMessagePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B74429B12DB0008BB5EF /* MockMessagePreviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +72,7 @@
 		2DCD7F4E29AFDA65005536FA /* HomeTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
 		2DCD7F5029AFDA75005536FA /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		2DCD7F5229AFDA8B005536FA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		2DCD7F5429AFDA96005536FA /* MessageTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableController.swift; sourceTree = "<group>"; };
+		2DCD7F5429AFDA96005536FA /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		2DCD7F5829AFE3CF005536FA /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		2DCD7F6229AFECDF005536FA /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		2DCD7F6429AFED6A005536FA /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
@@ -107,6 +111,10 @@
 		2DD2B73229B123C4008BB5EF /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		2DD2B73629B12451008BB5EF /* MockNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotifications.swift; sourceTree = "<group>"; };
 		2DD2B73829B12560008BB5EF /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		2DD2B73A29B12AA5008BB5EF /* MessageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageNavigationController.swift; sourceTree = "<group>"; };
+		2DD2B74029B12D0B008BB5EF /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
+		2DD2B74229B12D32008BB5EF /* MessagePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreviewCell.swift; sourceTree = "<group>"; };
+		2DD2B74429B12DB0008BB5EF /* MockMessagePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessagePreviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +230,10 @@
 		2DCD7F4D29AFDA41005536FA /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				2DCD7F5429AFDA96005536FA /* MessageTableController.swift */,
+				2DD2B73F29B12CFB008BB5EF /* Mock */,
+				2DD2B73E29B12CF7008BB5EF /* View */,
+				2DD2B73D29B12CEF008BB5EF /* Model */,
+				2DD2B73C29B12CE8008BB5EF /* Controller */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -352,6 +363,39 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		2DD2B73C29B12CE8008BB5EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD7F5429AFDA96005536FA /* MessageController.swift */,
+				2DD2B73A29B12AA5008BB5EF /* MessageNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DD2B73D29B12CEF008BB5EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2B74029B12D0B008BB5EF /* MessagePreview.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DD2B73E29B12CF7008BB5EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2B74229B12D32008BB5EF /* MessagePreviewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DD2B73F29B12CFB008BB5EF /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2B74429B12DB0008BB5EF /* MockMessagePreviews.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -454,13 +498,16 @@
 				2DD2B73929B12560008BB5EF /* NotificationCell.swift in Sources */,
 				2DCD7F6F29AFF19E005536FA /* MockPosts.swift in Sources */,
 				2DCD7F7729AFFE94005536FA /* HorizontalStack.swift in Sources */,
+				2DD2B74329B12D32008BB5EF /* MessagePreviewCell.swift in Sources */,
 				2DD2B72F29B09A18008BB5EF /* CustomSplitView.swift in Sources */,
+				2DD2B73B29B12AA5008BB5EF /* MessageNavigationController.swift in Sources */,
 				2DCD7FA229B0133F005536FA /* String+.swift in Sources */,
 				2DCD7F6C29AFF148005536FA /* Post.swift in Sources */,
+				2DD2B74529B12DB0008BB5EF /* MockMessagePreviews.swift in Sources */,
 				2DCD7F4F29AFDA65005536FA /* HomeTableController.swift in Sources */,
 				2DCD7F6329AFECDF005536FA /* UIButton+.swift in Sources */,
 				2DCD7F7129AFF394005536FA /* PostCell.swift in Sources */,
-				2DCD7F5529AFDA96005536FA /* MessageTableController.swift in Sources */,
+				2DCD7F5529AFDA96005536FA /* MessageController.swift in Sources */,
 				2DD2B72929B09172008BB5EF /* SearchTextField.swift in Sources */,
 				2DD2B72B29B097C6008BB5EF /* NotificationNavigationController.swift in Sources */,
 				2DD2B72329B0184D008BB5EF /* SearchNavigationControllerSearchNavController.swift in Sources */,
@@ -472,6 +519,7 @@
 				2DD2B73329B123C4008BB5EF /* Notification.swift in Sources */,
 				2DCD7F5929AFE3CF005536FA /* HomeNavigationController.swift in Sources */,
 				2DCD7F7529AFFE23005536FA /* VerticalStack.swift in Sources */,
+				2DD2B74129B12D0B008BB5EF /* MessagePreview.swift in Sources */,
 				2DCD7F3329AFD8D2005536FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

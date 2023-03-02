@@ -34,7 +34,7 @@ final class BaseTabBarController: UITabBarController {
             HomeNavigationController(),
             SearchNavigationController(),
             NotificationNavigationController(),
-            createNavController(viewController: MessageTableController(), imageName: "message")
+            MessageNavigationController()
         ]
     }
     
