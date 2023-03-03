@@ -61,5 +61,13 @@ final class HomeNavigationController: UINavigationController {
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-12)
             make.trailing.equalToSuperview().offset(-12)
         }
+        
+        addTextButton.addTarget(self, action: #selector(handleAddTweet), for: .touchUpInside)
+    }
+    
+    @objc func handleAddTweet() {
+        let tweetController = TweetController()
+        tweetController.modalPresentationStyle = .fullScreen
+        present(tweetController, animated: true)
     }
 }

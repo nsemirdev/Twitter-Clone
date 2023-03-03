@@ -52,13 +52,14 @@
 		2DD2B72929B09172008BB5EF /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72829B09172008BB5EF /* SearchTextField.swift */; };
 		2DD2B72B29B097C6008BB5EF /* NotificationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72A29B097C6008BB5EF /* NotificationNavigationController.swift */; };
 		2DD2B72F29B09A18008BB5EF /* CustomSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B72E29B09A18008BB5EF /* CustomSplitView.swift */; };
-		2DD2B73329B123C4008BB5EF /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73229B123C4008BB5EF /* Notification.swift */; };
+		2DD2B73329B123C4008BB5EF /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73229B123C4008BB5EF /* UserNotification.swift */; };
 		2DD2B73729B12451008BB5EF /* MockNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73629B12451008BB5EF /* MockNotifications.swift */; };
 		2DD2B73929B12560008BB5EF /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73829B12560008BB5EF /* NotificationCell.swift */; };
 		2DD2B73B29B12AA5008BB5EF /* MessageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B73A29B12AA5008BB5EF /* MessageNavigationController.swift */; };
 		2DD2B74129B12D0B008BB5EF /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B74029B12D0B008BB5EF /* MessagePreview.swift */; };
 		2DD2B74329B12D32008BB5EF /* MessagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B74229B12D32008BB5EF /* MessagePreviewCell.swift */; };
 		2DD2B74529B12DB0008BB5EF /* MockMessagePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B74429B12DB0008BB5EF /* MockMessagePreviews.swift */; };
+		2DD2B74829B1E6FE008BB5EF /* TweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2B74729B1E6FE008BB5EF /* TweetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,13 +109,14 @@
 		2DD2B72829B09172008BB5EF /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		2DD2B72A29B097C6008BB5EF /* NotificationNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNavigationController.swift; sourceTree = "<group>"; };
 		2DD2B72E29B09A18008BB5EF /* CustomSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplitView.swift; sourceTree = "<group>"; };
-		2DD2B73229B123C4008BB5EF /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2DD2B73229B123C4008BB5EF /* UserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotification.swift; sourceTree = "<group>"; };
 		2DD2B73629B12451008BB5EF /* MockNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotifications.swift; sourceTree = "<group>"; };
 		2DD2B73829B12560008BB5EF /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		2DD2B73A29B12AA5008BB5EF /* MessageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageNavigationController.swift; sourceTree = "<group>"; };
 		2DD2B74029B12D0B008BB5EF /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
 		2DD2B74229B12D32008BB5EF /* MessagePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreviewCell.swift; sourceTree = "<group>"; };
 		2DD2B74429B12DB0008BB5EF /* MockMessagePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessagePreviews.swift; sourceTree = "<group>"; };
+		2DD2B74729B1E6FE008BB5EF /* TweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		2DCD7F4629AFD974005536FA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2DD2B74629B1E6F1008BB5EF /* Tweet */,
 				2DCD7F4D29AFDA41005536FA /* Message */,
 				2DCD7F4C29AFDA39005536FA /* Notification */,
 				2DCD7F4B29AFDA34005536FA /* Search */,
@@ -350,7 +353,7 @@
 		2DD2B73029B123AC008BB5EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2DD2B73229B123C4008BB5EF /* Notification.swift */,
+				2DD2B73229B123C4008BB5EF /* UserNotification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,6 +397,14 @@
 				2DD2B74429B12DB0008BB5EF /* MockMessagePreviews.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		2DD2B74629B1E6F1008BB5EF /* Tweet */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2B74729B1E6FE008BB5EF /* TweetController.swift */,
+			);
+			path = Tweet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +511,7 @@
 				2DCD7F7729AFFE94005536FA /* HorizontalStack.swift in Sources */,
 				2DD2B74329B12D32008BB5EF /* MessagePreviewCell.swift in Sources */,
 				2DD2B72F29B09A18008BB5EF /* CustomSplitView.swift in Sources */,
+				2DD2B74829B1E6FE008BB5EF /* TweetController.swift in Sources */,
 				2DD2B73B29B12AA5008BB5EF /* MessageNavigationController.swift in Sources */,
 				2DCD7FA229B0133F005536FA /* String+.swift in Sources */,
 				2DCD7F6C29AFF148005536FA /* Post.swift in Sources */,
@@ -516,7 +528,7 @@
 				2DCD7F6529AFED6A005536FA /* Divider.swift in Sources */,
 				2DCD7F6729AFEDD9005536FA /* UIView+.swift in Sources */,
 				2DCD7F7329AFFBBE005536FA /* UILabel+.swift in Sources */,
-				2DD2B73329B123C4008BB5EF /* Notification.swift in Sources */,
+				2DD2B73329B123C4008BB5EF /* UserNotification.swift in Sources */,
 				2DCD7F5929AFE3CF005536FA /* HomeNavigationController.swift in Sources */,
 				2DCD7F7529AFFE23005536FA /* VerticalStack.swift in Sources */,
 				2DD2B74129B12D0B008BB5EF /* MessagePreview.swift in Sources */,

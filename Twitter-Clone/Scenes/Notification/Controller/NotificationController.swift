@@ -54,9 +54,9 @@ extension NotificationController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if dataSource is [Notification] {
+        if dataSource is [UserNotification] {
             let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! NotificationCell
-            cell.configure(with: dataSource[indexPath.row] as! Notification)
+            cell.configure(with: dataSource[indexPath.row] as! UserNotification)
             return cell
         } else if dataSource is [Post] {
             let cell = tableView.dequeueReusableCell(withIdentifier: cell2, for: indexPath) as! PostCell

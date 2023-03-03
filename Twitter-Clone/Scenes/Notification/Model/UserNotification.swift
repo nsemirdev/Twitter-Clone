@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Notification {
+struct UserNotification {
     let image: String
     let text: String
 }

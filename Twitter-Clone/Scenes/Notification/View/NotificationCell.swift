@@ -19,7 +19,7 @@ final class NotificationCell: UITableViewCell {
         setupViews()
     }
     
-    func configure(with notification: Notification) {
+    func configure(with notification: UserNotification) {
         profileImage.image = UIImage(named: notification.image)
         bodyLabel.text = notification.text
     }
