@@ -27,6 +27,7 @@ final class MessagePreviewCell: UITableViewCell {
         
         nameLabel.textAlignment = .left
         usernameLabel.textAlignment = .left
+        usernameLabel.setContentCompressionResistancePriority(.init(0), for: .horizontal)
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
